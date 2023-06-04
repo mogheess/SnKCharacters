@@ -21,7 +21,6 @@ function App() {
       try {
         setIsLoading(true);
         const result = await axios.get('https://api.jikan.moe/v4/anime/16498/characters');
-        console.log(result.data);
         setAllItems(result.data.data);
         setIsLoading(false);
       } catch (error) {
